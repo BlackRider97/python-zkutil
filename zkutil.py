@@ -108,7 +108,7 @@ def print_usages():
 
 if __name__ == '__main__':
     if len(sys.argv) < 4:
-       print_usages
+       print_usages()
        sys.exit()
 
     command = str(sys.argv[1]).strip()
@@ -123,4 +123,4 @@ if __name__ == '__main__':
         dist_zk.start()
         import_data(dist_zk, str(sys.argv[3]).strip())
     else:
-        print_usages
+        print_usages()
