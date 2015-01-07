@@ -6,7 +6,7 @@ RUN pip install pyyaml
 
 VOLUME /python-zkutil
 
-WORKDIR python-zkutil
+WORKDIR /python-zkutil
 
 CMD python zkutil.py
  
